@@ -41,7 +41,6 @@ describe("eventList", function(){
         eventList.add(event1)
         eventList.filter()
         eventList.sort()
-        expect(eventList.show()).toEqual(["2019-03-06T23:00 || Today"])
+        expect(eventList.show()).toEqual(["2019-03-06T23:00 || Today\n"])
     })
-    
 })

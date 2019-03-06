@@ -20,15 +20,10 @@ class EventList{
     }
     show(){
         let showEvents = []
-        console.log(23)
-        console.log(this.all)
         this.all.forEach(function(event){
-            console.log(25)
-            showEvents.push(event.dateTime + " || " + event.description)
-            console.log(27)
+            showEvents.push(event.dateTime + " || " + event.description + "\n")
         })
-        console.log(29)
-        console.log(showEvents)
+
         return showEvents
     }
 }
