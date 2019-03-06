@@ -1,5 +1,6 @@
+'use strict'
 describe("Event", function(){
-    let event;
+    let event
     beforeEach(function(){
         event = new Event("2019-03-06T17:00", "Group retro")
     })
