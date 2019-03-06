@@ -18,4 +18,9 @@ class EventList{
             return a.jsDateTime - b.jsDateTime
         })
     }
+    show(){
+        this.all.filter()
+        this.all.sort()
+        return this.all
+    }
 }

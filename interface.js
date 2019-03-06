@@ -4,13 +4,14 @@ function loadPage(){
     let timeInput = document.getElementById("timeInput").value
     let eventInput = document.getElementById("eventInput").value
     let sendButton = document.getElementById("sendButton")
-    let eventsOnPage = document.getElementById("eventsOnPage")
+    let showEvents = document.getElementById("showEvents")
     sendButton.onclick = function(){
         let newEvent = new Event(timeInput, eventInput)
         eventList.push(newEvent)
+        eventList.filter()
+        eventList.sort()
     }
-    eventsOnPage = function(evenList){
-
-    }
+    
+    showEvents.appendChild(list)    
 }
 document.onload = loadPage()
