@@ -1,21 +1,23 @@
 'use strict'
 class EventList{
     constructor() {
-        this.all = []
+        this.all = [];
     }
-    add(newEvent){
-        this.all.push(newEvent)
+    add(Event){
+        this.all.push(Event);
     }
+    // var lucky = numbers.filter(function(number) {
+    //     return number > 7;
+    //   });
+
     filter(){
-        let filteredEvents = []
-        this.all.forEach(function(event){
-            event.jsDateTime > new Date ? filteredEvents.push(event) : ""
+        this.all = this.all.filter(function(event){
+            return event.jsDateTime > new Date
         })
-        this.all = filteredEvents
     }
     sort(){
         this.all.sort(function(a, b){
-            return a.jsDateTime - b.jsDateTime
+            return a.jsDateTime - b.jsDateTime;
         })
     }
     show(){

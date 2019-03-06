@@ -1,4 +1,4 @@
-'use stric'
+'use strict'
 class Event{
     constructor(dateTime, description){
         this.dateTime = dateTime
