@@ -1,7 +1,7 @@
 'use strict'
 let eventList = new evenList
 function loadPage(){
-    let timeInput = document.getElementById("timeINput").value
+    let timeInput = document.getElementById("timeInput").value
     let eventInput = document.getElementById("eventInput").value
     let sendButton = document.getElementById("sendButton")
     let eventsOnPage = document.getElementById("eventsOnPage")
@@ -10,7 +10,7 @@ function loadPage(){
         eventList.push(newEvent)
     }
     eventsOnPage = function(evenList){
-        
+
     }
 }
 document.onload = loadPage()
