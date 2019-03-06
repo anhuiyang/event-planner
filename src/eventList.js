@@ -2,7 +2,6 @@
 class EventList{
     constructor() {
         this.all = []
-        this.orderedComingEvents = []
     }
     add(newEvent){
         this.all.push(newEvent)
@@ -13,5 +12,10 @@ class EventList{
             event.jsDateTime > new Date ? filteredEvents.push(event) : ""
         })
         this.all = filteredEvents
+    }
+    sort(){
+        this.all.sort(function(a, b){
+            return a.jsDateTime - b.jsDateTime
+        })
     }
 }
