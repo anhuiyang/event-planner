@@ -19,8 +19,16 @@ class EventList{
         })
     }
     show(){
-        this.all.filter()
-        this.all.sort()
-        return this.all
+        let showEvents = []
+        console.log(23)
+        console.log(this.all)
+        this.all.forEach(function(event){
+            console.log(25)
+            showEvents.push(event.dateTime + " || " + event.description)
+            console.log(27)
+        })
+        console.log(29)
+        console.log(showEvents)
+        return showEvents
     }
 }
