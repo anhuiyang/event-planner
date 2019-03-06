@@ -10,6 +10,7 @@ describe("eventList", function(){
     })
     it("can add new event to the list", function(){
         eventList.add(event1)
+        console.log(eventList.all[0])
         expect(eventList.all.length).toBe(1)
     })
     it("will filter out passed events", function(){
