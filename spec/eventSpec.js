@@ -11,6 +11,6 @@ describe("Event", function(){
         expect(event.description).toBe("Group retro")
     })
     it("will tranform to js date-time format",function(){
-        expect(event.jsDateTime()).toEqual(new Date("2019-03-06T17:00"))
+        expect(event.jsDateTime).toEqual(new Date("2019-03-06T17:00"))
     })
 })

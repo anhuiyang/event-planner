@@ -10,8 +10,8 @@ class EventList{
     filter(){
         let filteredEvents = []
         this.all.forEach(function(event){
-            event.dateTime > new Date ? filteredEvents.push(event) : ""
+            event.jsDateTime > new Date ? filteredEvents.push(event) : ""
         })
-        this.orderedComingEvents = filteredEvents
+        this.all = filteredEvents
     }
 }
