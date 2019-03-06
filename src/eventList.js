@@ -1,31 +1,25 @@
 'use strict'
 class EventList{
     constructor() {
-        this.all = [];
+        this.allObject = [];
+        this.allString = [];
     }
     add(Event){
-        this.all.push(Event);
+        this.allObject.push(Event);
     }
-    // var lucky = numbers.filter(function(number) {
-    //     return number > 7;
-    //   });
-
     filter(){
-        this.all = this.all.filter(function(event){
-            return event.jsDateTime > new Date
+        this.allObject = this.allObject.filter(function(event){
+            return event.jsDateTime > new Date;
         })
     }
     sort(){
-        this.all.sort(function(a, b){
+        this.allObject.sort(function(a, b){
             return a.jsDateTime - b.jsDateTime;
         })
     }
     show(){
-        let showEvents = []
-        this.all.forEach(function(event){
-            showEvents.push(event.dateTime + " || " + event.description + "\n")
+        this.allString = this.allObject.map(function(event){
+            return(event.jsDateTime + " || " + event.description);
         })
-
-        return showEvents
     }
 }
