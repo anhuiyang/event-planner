@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 class EventList{
     constructor() {
         this.allObject = [];
@@ -6,9 +6,9 @@ class EventList{
     }
     add(Event){
         this.allObject.push(Event);
-        this.filter()
-        this.sort()
-        this.show()
+        this.filter();
+        this.sort();
+        this.show();
     }
     filter(){
         this.allObject = this.allObject.filter(function(event){

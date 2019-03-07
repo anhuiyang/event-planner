@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 describe("eventList", function(){
-    let event1, eventList, event2, event3, event4
+    let event1, eventList, event2, event3, event4;
     beforeEach(function(){
         eventList = new EventList();
         event1 = {description: "Today", jsDateTime: new Date("2019-07-06T17:00")};

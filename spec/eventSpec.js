@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 describe("Event", function(){
     let event;
     beforeEach(function(){

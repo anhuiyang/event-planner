@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 let eventList = new EventList;
 function loadPage(){
     let timeInput = document.getElementById("timeInput");
@@ -8,9 +8,9 @@ function loadPage(){
     sendButton.onclick = function(){
         let newEvent = new Event(timeInput.value, eventInput.value);
             eventList.add(newEvent);
-            showEvents.innerText = eventList.allString.toString()
-            timeInput.value = ''
+            showEvents.innerText = eventList.allString.toString();
+            timeInput.value = '';
             eventInput.value = ''
     }
 }
-document.onload = loadPage()
+document.onload = loadPage();
