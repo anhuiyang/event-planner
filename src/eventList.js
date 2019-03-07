@@ -6,6 +6,9 @@ class EventList{
     }
     add(Event){
         this.allObject.push(Event);
+        this.filter()
+        this.sort()
+        this.show()
     }
     filter(){
         this.allObject = this.allObject.filter(function(event){
@@ -19,7 +22,7 @@ class EventList{
     }
     show(){
         this.allString = this.allObject.map(function(event){
-            return(event.jsDateTime + " || " + event.description);
+            return(event.jsDateTime + " || " + event.description + "\n");
         })
     }
 }

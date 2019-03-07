@@ -7,10 +7,10 @@ function loadPage(){
     let showEvents = document.getElementById("showEvents");
     sendButton.onclick = function(){
         let newEvent = new Event(timeInput.value, eventInput.value);
-        eventList.add(newEvent);
-        eventList.filter();
-        eventList.sort();
-        showEvents.innerText = eventList.show();
+            eventList.add(newEvent);
+            showEvents.innerText = eventList.allString.toString()
+            timeInput.value = ''
+            eventInput.value = ''
     }
 }
-document.onload = loadPage();
+document.onload = loadPage()
