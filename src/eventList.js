@@ -16,8 +16,8 @@ class EventList{
         })
     }
     sort(){
-        this.allObject.sort(function(a, b){
-            return a.jsDateTime - b.jsDateTime;
+        this.allObject.sort(function(eventA, eventB){
+            return eventA.jsDateTime - eventB.jsDateTime;
         })
     }
     show(){
