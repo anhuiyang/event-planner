@@ -11,7 +11,6 @@ class Event{
     stringFormat(){
         let li = document.createElement('li');
         li.innerText = this.jsDateTime + " || " + this.description;
-        console.log(li)
         return li
     }
 }
