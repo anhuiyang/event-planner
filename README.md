@@ -2,18 +2,18 @@
 Week 7 - An event planner app in Javescript
 
 ## Description
-A single page event planner application in Javascript
+A single page event planner application in Vanilla JavaScript with local storage fully TDD
 With a index.html page for user, a interface.js to control index, a class event.js and a class evenList.js
 
 ## Tech Stack
-[Javscrip]
-[Jasmine]
+[Javscript]
+[Casi_test_framework] - self-made JS testing framework
 
 ## Getting Started
 1. Clone this repo `git clone git@github.com:anhuiyang/event_planner_app.git`
 2. Change directory  `cd event_planner_app`
 3. Run bundle install dependencies `npm install`
-4. Run the test `open SpecRunner.html`
+4. Run the test `open casiRunner.html`
 5. Open index page by google chrome `open index.html`
 ![index](https://github.com/anhuiyang/event_planner_app/blob/master/images/Screenshot%202019-03-12%20at%203.57.54%20pm.png?raw=true)
 
