@@ -1,14 +1,14 @@
-'use strict';
 class EventList{
-    constructor() {
-        this.allObject = [];
-        this.allString = [];
+    constructor(events) {
+        this.storageEvents = events || [];
+        this.allObject = this.storageEvents.map(function(storageEvent){
+            return new Event(storageEvent.jsDateTime, storageEvent.description)
+        })
     }
     add(Event){
         this.allObject.push(Event);
         this.filter();
-        this.sort();
-        this.show();
+        this.sort()
     }
     filter(){
         this.allObject = this.allObject.filter(function(event){
@@ -21,8 +21,10 @@ class EventList{
         })
     }
     show(){
-        this.allString = this.allObject.map(function(event){
-            return(event.jsDateTime + " || " + event.description + "\n");
+        let ul = document.createElement('ul')
+        this.allObject.map(function(event){
+            ul.appendChild(event.stringFormat())
         })
+        return ul
     }
 }
