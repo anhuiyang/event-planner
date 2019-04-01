@@ -7,7 +7,7 @@ With a index.html page for user, a interface.js to control index, a class event.
 
 ## Tech Stack
 [Javscript]  
-[Casi_test_framework] - self-made JS testing framework
+[Casi_test_framework](https://github.com/anhuiyang/casi_test_framework_js) - self-made JS testing framework
 
 ## Getting Started
 1. Clone this repo `git clone git@github.com:anhuiyang/event_planner_app.git`
