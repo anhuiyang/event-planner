@@ -6,7 +6,7 @@ A single page event planner application in Vanilla JavaScript with local storage
 With a index.html page for user, a interface.js to control index, a class event.js and a class evenList.js
 
 ## Tech Stack
-[Javscript]
+[Javscript]  
 [Casi_test_framework] - self-made JS testing framework
 
 ## Getting Started
