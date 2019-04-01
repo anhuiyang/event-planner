@@ -2,7 +2,7 @@
 Week 7 - An event planner app in Javescript
 
 ## Description
-A single page event planner application in Vanilla JavaScript with local storage fully TDD
+A single page event planner application in Vanilla JavaScript with local storage fully TDD   
 With a index.html page for user, a interface.js to control index, a class event.js and a class evenList.js
 
 ## Tech Stack
